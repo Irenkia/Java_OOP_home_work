@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class TextSaver {
-	TextTransformer transformer;
-	File file;
+	private TextTransformer transformer;
+	private File file;
 
 	public TextSaver(TextTransformer transformer, File file) {
 		super();

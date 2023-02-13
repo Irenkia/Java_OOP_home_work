@@ -1,7 +1,7 @@
 package com.gmail.tiutiuniryna;
 
 public class Veterinarian {
-	String name;
+	private String name;
 
 	public Veterinarian(String name) {
 		super();

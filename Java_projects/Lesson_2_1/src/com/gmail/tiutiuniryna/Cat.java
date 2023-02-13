@@ -1,7 +1,7 @@
 package com.gmail.tiutiuniryna;
 
 public class Cat extends Animal {
-	String name;
+	private String name;
 
 	public Cat(String ration, String color, int weight, String name) {
 		super(ration, color, weight);
