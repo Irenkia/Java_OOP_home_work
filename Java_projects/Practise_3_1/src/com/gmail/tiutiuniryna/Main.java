@@ -6,7 +6,7 @@ public class Main {
 		System.out.println("Let's create products");
 		Product product1 = new Product("Bag male", 250, 1);
 		Product product2 = new Product("Bag women's", 350, 2);
-		Product product3 = new Product("Bag children's", 150, 3);
+		Product product3 = new Product("Bag children's", 150, -3);
 
 		System.out.println(product1);
 		System.out.println(product2);
