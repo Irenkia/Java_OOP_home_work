@@ -6,7 +6,7 @@ public class Main {
 		System.out.println("Let's create products");
 		Product product1 = new Product("Bag male", 250, 1);
 		Product product2 = new Product("Bag women's", 350, 2);
-		Product product3 = new Product("Bag children's", 150, -3);
+		Product product3 = new Product("Bag children's", 150, 3);
 
 		System.out.println(product1);
 		System.out.println(product2);
@@ -21,11 +21,11 @@ public class Main {
 		System.out.println(allProducts);
 		System.out.println();
 
-		System.out.println("Find out if the product 3 is in the order");
+		System.out.println("Find out if the product 5 is in the order");
 		try {
-			System.out.println(allProducts.searchProductById(product3.getId()));
+			System.out.println(allProducts.searchProductById(5));
 		} catch (ProductNotFoundException e) {
-			System.out.println("This product not finded");
+			e.printStackTrace();
 		}
 		System.out.println();
 

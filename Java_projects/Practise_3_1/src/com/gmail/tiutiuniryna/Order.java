@@ -24,52 +24,55 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Order [products=" + Arrays.toString(products) + "]";
+		String result = "Order" + System.lineSeparator();
+		for (int i = 0; i < products.length; i++) {
+			if (products[i] != null) {
+				result += products[i] + System.lineSeparator();
+			}
+		}
+		return result + " total sum = " + calculateTotalSum();
 	}
+
 	public void addProduct(Product product) {
-		for(int i =0;i<products.length;i++) {
-			if(products[i]==null) {
+		for (int i = 0; i < products.length; i++) {
+			if (products[i] == null) {
 				products[i] = product;
-				break;
+				return;
 			}
-			
+
 		}
-		
+
 	}
-	public Product searchProductById(int id) throws ProductNotFoundException{
-		Product result = null;
-		for(int i =0;i<products.length;i++) {
-			if(products[i]==null) {
-				break;
-			}
-			if(products[i].getId()==id) {
-				result = products[i];
+
+	public Product searchProductById(int id) throws ProductNotFoundException {
+		for (int i = 0; i < products.length; i++) {
+			if (products[i] != null) {
+				if (products[i].getId() == id) {
+					return products[i];
+				}
 			}
 		}
-		return result;
+		throw new ProductNotFoundException("This product not finded");
 	}
+
 	public boolean removeProductById(int id) {
-		boolean result =false;
-		for(int i =0;i<products.length;i++) {
-			if(products[i]==null) {
-				break;
-			}
-			if(products[i].getId()==id) {
-				products[i] = null;
-				result = true;			
-			}else {
-				result = false;			
+		for (int i = 0; i < products.length; i++) {
+			if (products[i] != null) {
+				if (products[i].getId() == id) {
+					products[i] = null;
+					return true;
+				}
 			}
 		}
-		return result;
+		return false;
 	}
+
 	public int calculateTotalSum() {
-		int sum =0;
-		for(int i =0;i<products.length;i++) {
-			if(products[i]==null) {
-				continue;
+		int sum = 0;
+		for (int i = 0; i < products.length; i++) {
+			if (products[i] != null) {
+				sum += products[i].getPrice();
 			}
-			sum += products[i].getPrice();
 		}
 		return sum;
 	}
