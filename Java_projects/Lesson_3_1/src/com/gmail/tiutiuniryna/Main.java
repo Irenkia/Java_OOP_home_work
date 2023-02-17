@@ -43,6 +43,8 @@ public class Main {
 		}catch(StudentNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println(group1.sortingStudentByLastName());;
 
 	}
 

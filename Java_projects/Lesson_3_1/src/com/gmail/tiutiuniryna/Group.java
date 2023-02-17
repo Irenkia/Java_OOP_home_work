@@ -1,8 +1,11 @@
 package com.gmail.tiutiuniryna;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Group {
 	private String groupName;
-	private Student[] studens;
+	private Student[] students;
 
 	public Group(String groupName) {
 		super();
@@ -12,7 +15,7 @@ public class Group {
 
 	public Group() {
 		super();
-		studens = new Student[10];
+		students = new Student[10];
 	}
 
 	public String getGroupName() {
@@ -26,18 +29,18 @@ public class Group {
 	@Override
 	public String toString() {
 		String result = "Group" + System.lineSeparator();
-		for (int i = 0; i < studens.length; i++) {
-			if (studens[i] != null) {
-				result += studens[i] + System.lineSeparator();
+		for (int i = 0; i < students.length; i++) {
+			if (students[i] != null) {
+				result += students[i] + System.lineSeparator();
 			}
 		}
 		return result;
 	}
 
 	public void addStudent(Student student) throws GroupOverflowException {
-		for (int i = 0; i < studens.length; i++) {
-			if (studens[i] == null) {
-				studens[i] = student;
+		for (int i = 0; i < students.length; i++) {
+			if (students[i] == null) {
+				students[i] = student;
 				return;
 			}
 		}
@@ -45,24 +48,41 @@ public class Group {
 	}
 
 	public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
-		for (int i = 0; i < studens.length; i++) {
-			if (studens[i] != null) {
-				if (studens[i].getLastName() == lastName)
-					return studens[i];
+		for (int i = 0; i < students.length; i++) {
+			if (students[i] != null) {
+				if (students[i].getLastName() == lastName)
+					return students[i];
 			}
 		}
 		throw new StudentNotFoundException();
 	}
 
 	public boolean removeStudentByID(int id) {
-		for (int i = 0; i < studens.length; i++) {
-			if (studens[i] != null) {
-				if (studens[i].getId() == id) {
-					studens[i] = null;
+		for (int i = 0; i < students.length; i++) {
+			if (students[i] != null) {
+				if (students[i].getId() == id) {
+					students[i] = null;
 					return true;
 				}
 			}
 		}
 		return false;
+	}
+
+	public String sortingStudentByLastName() {
+		Student temp;
+		for (int i = 0; i < students.length; i++) {
+			for (int j = i; j < students.length; j++) {
+				if (students[i] != null && students[j] != null) {
+					if (students[i].getLastName().compareTo(students[j].getLastName()) > 0) {
+						temp = students[i];
+						students[i] = students[j];
+						students[j] = temp;
+					}
+				}
+
+			}
+		}
+		return toString();
 	}
 }
