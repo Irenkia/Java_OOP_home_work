@@ -69,12 +69,12 @@ public class Group {
 		return false;
 	}
 
-	public String sortingStudentByLastName() {
+	public String sortingStudentsByName() {
 		Student temp;
 		for (int i = 0; i < students.length; i++) {
 			for (int j = i; j < students.length; j++) {
 				if (students[i] != null && students[j] != null) {
-					if (students[i].getLastName().compareTo(students[j].getLastName()) > 0) {
+					if (students[i].getName().compareTo(students[j].getName()) > 0) {
 						temp = students[i];
 						students[i] = students[j];
 						students[j] = temp;
@@ -83,6 +83,11 @@ public class Group {
 
 			}
 		}
+		return toString();
+	}
+	
+	public String sortStudentsByLastName() { 
+		Arrays.sort(students, Comparator.nullsLast(new SortStudentsNmaeComparator()));
 		return toString();
 	}
 }

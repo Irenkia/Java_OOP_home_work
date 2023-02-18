@@ -1,5 +1,7 @@
 package com.gmail.tiutiuniryna;
 
+import java.util.Arrays;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -44,7 +46,9 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		System.out.println(group1.sortingStudentByLastName());;
+		System.out.println(group1.sortingStudentsByName());
+		
+		System.out.println(group1.sortStudentsByLastName());
 
 	}
 
