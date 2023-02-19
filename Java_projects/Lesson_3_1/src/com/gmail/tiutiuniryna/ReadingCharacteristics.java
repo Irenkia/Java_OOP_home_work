@@ -10,7 +10,7 @@ public class ReadingCharacteristics {
 		String lastName = lastNameScValidation(sc);
 		Gender gender = genderScValidation(sc);
 		int id = idScValidation(sc);
-		System.out.println();
+		sc.nextLine();
 		String groupName = groupNameScValidation(sc);
 		sc.close();
 

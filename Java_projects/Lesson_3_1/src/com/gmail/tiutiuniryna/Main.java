@@ -42,9 +42,17 @@ public class Main {
 		System.out.println(group1.sortingStudentsByName());
 
 		System.out.println(group1.sortStudentsByLastName());
+		
 
-		Student student7 = ReadingCharacteristics.createStudent();
+		CSVStringConverter strConverter = new CSVStringConverter();
+		String strStudent7 =strConverter.toStringRepresentation(student4);
+		System.out.println(strStudent7);
+		Student student7 = strConverter.fromStringRepresentation(strStudent7);
 		System.out.println(student7);
+		System.out.println();
+		
+		Student student8 = ReadingCharacteristics.createStudent();
+		System.out.println(student8);
 
 	}
 
