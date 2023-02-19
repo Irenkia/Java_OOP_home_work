@@ -22,15 +22,17 @@ public class CSVStringConverter implements StringConverter {
 		String name = words[2];
 		String lastName = words[3];
 		String genderStudent = words[4];
-		Gender gender = null;
-		if (genderStudent == "MALE") {
-			gender = Gender.valueOf("MALE");
-		}
-		if (genderStudent == "FEMALE") {
-			gender = Gender.valueOf("FEMALE");
-		}
+
+		Gender gender = genderStrValidation(genderStudent.trim().toUpperCase());
+
 		Student student = new Student(name, lastName, gender, id, groupName);
 		return student;
+	}
+
+	private Gender genderStrValidation(String str) {
+
+		Gender genderValidate = Gender.valueOf(str);
+		return genderValidate;
 	}
 
 }
