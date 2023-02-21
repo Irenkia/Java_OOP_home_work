@@ -2,6 +2,7 @@ package com.gmail.tiutiuniryna;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Group {
 	private String groupName;
@@ -48,10 +49,12 @@ public class Group {
 	}
 
 	public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
+		int val = 0;
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null) {
-				if (students[i].getLastName() == lastName)
+				if (val == students[i].getLastName().compareTo(lastName)) {
 					return students[i];
+				}
 			}
 		}
 		throw new StudentNotFoundException();
@@ -85,8 +88,8 @@ public class Group {
 		}
 		return toString();
 	}
-	
-	public String sortStudentsByLastName() { 
+
+	public String sortStudentsByLastName() {
 		Arrays.sort(students, Comparator.nullsLast(new SortStudentsNmaeComparator()));
 		return toString();
 	}
