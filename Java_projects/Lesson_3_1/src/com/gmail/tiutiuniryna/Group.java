@@ -49,10 +49,11 @@ public class Group {
 	}
 
 	public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
-		int val = 0;
+//		int val = 0;
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null) {
-				if (val == students[i].getLastName().compareTo(lastName)) {
+//				if (val == students[i].getLastName().compareTo(lastName)) {
+				if (true == students[i].getLastName().equals(lastName)) {
 					return students[i];
 				}
 			}
