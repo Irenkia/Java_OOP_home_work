@@ -32,7 +32,7 @@ public class Main {
 		System.out.println();
 
 		try {
-//			group1.searchStudentByLastName("Tkach");
+//			group1.searchStudentByLastName("Sidorov");
 //			System.out.println(student3);
 			group1.searchStudentByLastName(student6.getLastName());
 			System.out.println(student6);
