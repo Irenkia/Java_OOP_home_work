@@ -19,6 +19,12 @@ public class Group {
 		students = new Student[10];
 	}
 
+	public Group(String groupName, Student[] students) {
+		super();
+		this.groupName = groupName;
+		this.students = students;
+	}
+
 	public String getGroupName() {
 		return groupName;
 	}
@@ -27,9 +33,17 @@ public class Group {
 		this.groupName = groupName;
 	}
 
+	public Student[] getStudents() {
+		return students;
+	}
+
+	public void setStudents(Student[] students) {
+		this.students = students;
+	}
+
 	@Override
 	public String toString() {
-		String result = "Group" + System.lineSeparator();
+		String result = groupName + System.lineSeparator();
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null) {
 				result += students[i] + System.lineSeparator();

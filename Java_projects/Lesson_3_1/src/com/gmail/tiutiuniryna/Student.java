@@ -10,6 +10,11 @@ public class Student extends Human {
 		this.groupName = groupName;
 	}
 
+	public Student(String name, String lastName, Gender gender, int id) {
+		super(name, lastName, gender);
+		this.id = id;
+	}
+
 	public Student(String name, String lastName, Gender gender) {
 		super(name, lastName, gender);
 	}
