@@ -52,6 +52,27 @@ public class Group {
 		return result;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.hashCode(students);
+		result = prime * result + Objects.hash(groupName);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Group other = (Group) obj;
+		return Objects.equals(groupName, other.groupName) && Arrays.equals(students, other.students);
+	}
+
 	public void addStudent(Student student) throws GroupOverflowException {
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] == null) {
@@ -107,5 +128,17 @@ public class Group {
 	public String sortStudentsByLastName() {
 		Arrays.sort(students, Comparator.nullsLast(new SortStudentsNmaeComparator()));
 		return toString();
+	}
+
+	public boolean noIdenticalStudents(Group group) {
+		Student[] students = group.getStudents();
+		for (int i = 0; i < students.length; i++) {
+			if (students[i] != null && students[i + 1] != null) {
+				if (true == students[i].equals(students[i + 1])) {
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 }

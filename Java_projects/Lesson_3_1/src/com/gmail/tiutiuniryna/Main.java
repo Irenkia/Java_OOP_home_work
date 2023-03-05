@@ -15,6 +15,8 @@ public class Main {
 		Student student4 = new Student("Slava", "Sidorov", male, 4, "Group1");
 		Student student5 = new Student("Sveta", "Altuhova", female, 5, "Group1");
 		Student student6 = new Student("Lena", "Polakova", female, 6, "Group1");
+//     To test the method : noIdenticalStudents(group1)		
+//		Student student10 = new Student("Ivan", "Ivanov", male, 1, "Group1");
 
 		Group group1 = new Group();
 		group1.setGroupName("Group1");
@@ -25,6 +27,7 @@ public class Main {
 			group1.addStudent(student4);
 			group1.addStudent(student5);
 			group1.addStudent(student6);
+//			group1.addStudent(student10);
 
 		} catch (GroupOverflowException e) {
 			e.printStackTrace();
@@ -84,8 +87,11 @@ public class Main {
 		System.out.println(file1.getName());
 		System.out.println();
 
-		Student student8 = ReadingCharacteristics.createStudent();
-		System.out.println(student8);
+		System.out.println("There are no identical students in the group");
+		System.out.println(group1.noIdenticalStudents(group1));
+
+//		Student student8 = ReadingCharacteristics.createStudent();
+//		System.out.println(student8);
 
 	}
 
