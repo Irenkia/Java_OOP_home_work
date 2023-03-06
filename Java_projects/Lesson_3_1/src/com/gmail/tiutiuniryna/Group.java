@@ -133,11 +133,14 @@ public class Group {
 	public boolean noIdenticalStudents(Group group) {
 		Student[] students = group.getStudents();
 		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null && students[i + 1] != null) {
-				if (true == students[i].equals(students[i + 1])) {
-					return false;
+			for (int j = 0; j < students.length; j++) {
+				if (students[i] != null && students[j] != null && i != j) {
+					if (true == students[i].equals(students[j])) {
+						return false;
+					}
 				}
 			}
+
 		}
 		return true;
 	}
