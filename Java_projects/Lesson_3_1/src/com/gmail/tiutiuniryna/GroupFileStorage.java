@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GroupFileStorage {
 	public static void saveGroupToCSV(Group gr) throws IOException {
@@ -16,11 +18,12 @@ public class GroupFileStorage {
 			e.printStackTrace();
 		}
 		String str = "";
-		for (int i = 0; i < gr.getStudents().length; i++) {
+
+		for (int i = 0; i < gr.getStudents().size(); i++) {
 			try {
-				str += gr.getStudents()[i].getName() + "," + gr.getStudents()[i].getLastName() + ","
-						+ gr.getStudents()[i].getGender() + "," + gr.getStudents()[i].getId() + ","
-						+ gr.getStudents()[i].getGroupName() + "\n";
+				str += gr.getStudents().get(i).getName() + "," + gr.getStudents().get(i).getLastName() + ","
+						+ gr.getStudents().get(i).getGender() + "," + gr.getStudents().get(i).getId() + ","
+						+ gr.getStudents().get(i).getGroupName() + "\n";
 			} catch (Exception e) {
 				break;
 			}
@@ -50,12 +53,10 @@ public class GroupFileStorage {
 		}
 
 		String[] students = group.split("\n");
-		Student[] groupStudents = new Student[gr.getStudents().length];
 		CSVStringConverter obj = new CSVStringConverter();
 		for (int i = 0; i < students.length; i++) {
-			groupStudents[i] = obj.fromStringRepresentation(students[i]);
 			try {
-				gr.addStudent(groupStudents[i]);
+				gr.addStudent(obj.fromStringRepresentation(students[i]));
 			} catch (GroupOverflowException e) {
 				e.printStackTrace();
 			}

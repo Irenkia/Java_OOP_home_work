@@ -1,12 +1,13 @@
 package com.gmail.tiutiuniryna;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Objects;
+import java.util.*;
+//import java.util.Comparator;
+//import java.util.Objects;
 
 public class Group {
 	private String groupName;
-	private Student[] students;
+	private List<Student> students = new ArrayList<>();
+	private final int groupSize = 10;
 
 	public Group(String groupName) {
 		super();
@@ -14,15 +15,19 @@ public class Group {
 
 	}
 
-	public Group() {
+	public Group(List<Student> students) {
 		super();
-		students = new Student[10];
+		this.students = students;
 	}
 
-	public Group(String groupName, Student[] students) {
+	public Group(String groupName, List<Student> students) {
 		super();
 		this.groupName = groupName;
 		this.students = students;
+	}
+
+	public Group() {
+		super();
 	}
 
 	public String getGroupName() {
@@ -33,20 +38,20 @@ public class Group {
 		this.groupName = groupName;
 	}
 
-	public Student[] getStudents() {
+	public List<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(Student[] students) {
+	public void setStudents(List<Student> students) {
 		this.students = students;
 	}
 
 	@Override
 	public String toString() {
 		String result = groupName + System.lineSeparator();
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null) {
-				result += students[i] + System.lineSeparator();
+		for (Student student : students) {
+			if (students != null) {
+				result += student + System.lineSeparator();
 			}
 		}
 		return result;
@@ -54,11 +59,7 @@ public class Group {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + Arrays.hashCode(students);
-		result = prime * result + Objects.hash(groupName);
-		return result;
+		return Objects.hash(groupName, groupSize, students);
 	}
 
 	@Override
@@ -70,37 +71,33 @@ public class Group {
 		if (getClass() != obj.getClass())
 			return false;
 		Group other = (Group) obj;
-		return Objects.equals(groupName, other.groupName) && Arrays.equals(students, other.students);
+		return Objects.equals(groupName, other.groupName) && groupSize == other.groupSize
+				&& Objects.equals(students, other.students);
 	}
 
 	public void addStudent(Student student) throws GroupOverflowException {
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] == null) {
-				students[i] = student;
-				return;
-			}
+		if (students.size() >= groupSize) {
+			throw new GroupOverflowException();
 		}
-		throw new GroupOverflowException();
+		if (!students.contains(student)) {
+			students.add(student);
+		}
 	}
 
 	public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
-//		int val = 0;
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null) {
-//				if (val == students[i].getLastName().compareTo(lastName)) {
-				if (true == students[i].getLastName().equals(lastName)) {
-					return students[i];
-				}
+		for (Student student : students) {
+			if (student != null && student.getLastName().equals(lastName)) {
+				return student;
 			}
 		}
 		throw new StudentNotFoundException();
 	}
 
 	public boolean removeStudentByID(int id) {
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null) {
-				if (students[i].getId() == id) {
-					students[i] = null;
+		for (Student student : students) {
+			if (student != null) {
+				if (student.getId() == id) {
+					students.remove(student);
 					return true;
 				}
 			}
@@ -108,39 +105,25 @@ public class Group {
 		return false;
 	}
 
-	public String sortingStudentsByName() {
-		Student temp;
-		for (int i = 0; i < students.length; i++) {
-			for (int j = i; j < students.length; j++) {
-				if (students[i] != null && students[j] != null) {
-					if (students[i].getName().compareTo(students[j].getName()) > 0) {
-						temp = students[i];
-						students[i] = students[j];
-						students[j] = temp;
-					}
-				}
-
-			}
-		}
-		return toString();
-	}
-
+	@SuppressWarnings("unchecked")
 	public String sortStudentsByLastName() {
-		Arrays.sort(students, Comparator.nullsLast(new SortStudentsNmaeComparator()));
+		Collections.sort(students, Comparator.nullsLast(new SortStudentsNmaeComparator()));
 		return toString();
 	}
 
+	/*
+	 * This method is not relevant because the identity check is in the method of
+	 * adding a new student
+	 */
 	public boolean noIdenticalStudents(Group group) {
-		Student[] students = group.getStudents();
-		for (int i = 0; i < students.length; i++) {
-			for (int j = 0; j < students.length; j++) {
-				if (students[i] != null && students[j] != null && i != j) {
-					if (true == students[i].equals(students[j])) {
+		for (Student student : students) {
+			for (Student newStudent : students) {
+				if (student != null && newStudent != null && student != newStudent) {
+					if (true == student.equals(newStudent)) {
 						return false;
 					}
 				}
 			}
-
 		}
 		return true;
 	}
