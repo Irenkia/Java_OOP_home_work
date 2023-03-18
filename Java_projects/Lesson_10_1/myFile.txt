@@ -1,0 +1,10 @@
+love	люблю
+read	читаю
+books	книги
+world	cвiт
+Hello	Привіт
+and	та
+I	я
+reading	читати
+magazines	журнали
+articles	статті
