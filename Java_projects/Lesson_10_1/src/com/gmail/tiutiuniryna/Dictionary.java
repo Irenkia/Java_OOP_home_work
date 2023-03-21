@@ -1,13 +1,9 @@
 package com.gmail.tiutiuniryna;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.util.*;
-import java.util.Map.Entry;
 
 public class Dictionary {
 	private Map<String, String> dictionary = new HashMap<>();
@@ -36,7 +32,7 @@ public class Dictionary {
 	public void translationFromEngFileToUkrFile(File engFile, File ukrFile) {
 		String engText = "";
 		try {
-			engText = FileStorage.readTextFromFile(engFile);
+			engText = FileReaderService.readTextFromFile(engFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -44,7 +40,7 @@ public class Dictionary {
 		String ukrText = translationText(engText);
 
 		try {
-			FileStorage.writeTextToFile(ukrText, ukrFile);
+			FileWriterService.writeTextToFile(ukrText, ukrFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

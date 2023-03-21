@@ -8,6 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Dictionary dictionary = new Dictionary();
+
 		dictionary.addWords("Hello", "Привіт");
 		dictionary.addWords("I", "я");
 		dictionary.addWords("love", "люблю");
@@ -28,13 +29,13 @@ public class Main {
 		}
 		String myText = "Hello I love reading I read books and magazines and articles ";
 		try {
-			FileStorage.writeTextToFile(myText, engFile);
+			FileWriterService.writeTextToFile(myText, ukrFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		dictionary.translationFromEngFileToUkrFile(engFile, ukrFile);
-		
+
 		File file1 = new File("myFile.txt");
 		try {
 			file1.createNewFile();
