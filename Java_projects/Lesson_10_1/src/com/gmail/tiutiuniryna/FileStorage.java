@@ -24,13 +24,17 @@ public class FileStorage {
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 			String result = "";
 			String temp = "";
-			for (;;) {
-				temp = br.readLine();
-				if (temp == null) {
-					break;
-				}
-				result += temp + System.lineSeparator();
-			}
+//			for (;;) {
+//				temp = br.readLine();
+//				if (temp == null) {
+//					break;
+//				}
+//				result += temp + System.lineSeparator();
+//			}
+			while (temp != null){
+	            temp = br.readLine();
+	            result += temp + System.lineSeparator();
+	        }
 			return result.substring(0, result.length() - 1);
 		} catch (IOException e) {
 			throw e;

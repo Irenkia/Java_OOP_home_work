@@ -34,6 +34,13 @@ public class Main {
 		}
 
 		dictionary.translationFromEngFileToUkrFile(engFile, ukrFile);
+		
+		File file1 = new File("myFile.txt");
+		try {
+			file1.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		Scanner sc = new Scanner(System.in);
 		String engWord = "";
@@ -58,7 +65,7 @@ public class Main {
 				System.out.println(dictionary.getDictionary());
 				break;
 			case 3:
-				dictionary.saveToFile();
+				dictionary.saveToFile(file1);
 				break;
 			default:
 				if (chose != 0)

@@ -1,7 +1,7 @@
 love	люблю
 read	читаю
 books	книги
-world	cвiт
+world	світ
 Hello	Привіт
 and	та
 I	я

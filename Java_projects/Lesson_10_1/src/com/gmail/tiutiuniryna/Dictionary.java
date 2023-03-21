@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -60,27 +61,19 @@ public class Dictionary {
 		return ukrText;
 	}
 
-	public void saveToFile() {
-		File file = new File("myFile.txt");
+	public void saveToFile(File file) {
+		StringBuilder stringDictionary = new StringBuilder();
+		Set<Map.Entry<String, String>> setDictionary = dictionary.entrySet();
+		for (Map.Entry<String, String> entries : setDictionary) {
+			stringDictionary.append(entries.getKey()).append("\t").append(entries.getValue())
+					.append(System.lineSeparator());
+		}
 		try {
-			file.createNewFile();
+			Files.writeString(file.toPath(), stringDictionary.toString());
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new RuntimeException("Error");
 		}
-		try (PrintWriter pw = new PrintWriter(file)) {
-			Set<Map.Entry<String, String>> setDictionary = dictionary.entrySet();
-			for (Map.Entry<String, String> setDict : setDictionary) {
-				pw.println(setDict.getKey() + "\t" + setDict.getValue());
-			}
-//          Iterator<Map.Entry<String, String>> it = setDictionary.iterator();
-//          for (; it.hasNext(); ) {
-//          	Map.Entry<String, String> setDict = it.next();
-//              pw.println(setDict.getKey() + "\t" + setDict.getValue());
-//          }
-			System.out.println("\n" + "Dictionary saved to disk" + "\n");
-		} catch (IOException e) {
-			System.out.println(e);
-		}
+
 	}
 
 	@Override
