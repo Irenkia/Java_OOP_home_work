@@ -58,23 +58,21 @@ https://dou.ua/lenta/articles/portrait-2022/?from=doufp
 
 https://dou.ua/lenta/articles/diia-city-registry/?from=doufp
 
-https://dou.ua/forums/topic/42632/?from=slider
+https://dou.ua/forums/topic/42662/?from=slider
 
-https://dou.ua/lenta/articles/yuriy-osadchuk-obituary/?from=slider
+https://dou.ua/forums/topic/42603/?from=slider
 
-https://dou.ua/lenta/articles/yuriy-osadchuk-obituary/?from=slider#comments
+https://dou.ua/forums/topic/42611/?from=slider
 
-https://dou.ua/forums/topic/42571/?from=slider
+https://dou.ua/forums/topic/42611/?from=slider#comments
 
-https://dou.ua/forums/topic/42571/?from=slider#comments
+https://dou.ua/lenta/news/fedorovs-new-position-in-parlament/?from=slider
 
-https://dou.ua/forums/topic/42497/?from=slider
+https://dou.ua/lenta/news/fedorovs-new-position-in-parlament/?from=slider#comments
 
-https://dou.ua/forums/topic/42497/?from=slider#comments
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=slider
 
-https://dou.ua/forums/topic/42643/?from=slider
-
-https://dou.ua/forums/topic/42643/?from=slider#comments
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=slider#comments
 
 https://dou.ua/lenta/articles/
 
@@ -158,19 +156,23 @@ https://dou.ua/lenta/articles/devops-engineer-position/?from=fp_top240m
 
 https://dou.ua/forums/tags/tech/?from=fptech
 
+https://dou.ua/forums/topic/42662/?from=fptech
+
+https://dou.ua/forums/topic/42611/?from=fptech
+
 https://dou.ua/forums/topic/42497/?from=fptech
 
 https://dou.ua/forums/topic/42597/?from=fptech
 
 https://dou.ua/forums/topic/42590/?from=fptech
 
-https://dou.ua/forums/topic/42596/?from=fptech
-
-https://dou.ua/forums/topic/42553/?from=fptech
-
 https://dou.ua/forums/tags/tech/?from=fptech_more
 
 https://dou.ua/forums/blogs/?from=fpcol
+
+https://dou.ua/users/sviatoslav-nytka/
+
+https://dou.ua/forums/topic/42603/?from=fpcol
 
 https://dou.ua/users/olesia-pasieka/
 
@@ -187,10 +189,6 @@ https://dou.ua/forums/topic/42554/?from=fpcol
 https://dou.ua/users/Vitalii-Ivliev/
 
 https://dou.ua/forums/topic/42489/?from=fpcol
-
-https://dou.ua/users/ekaterina-vizhan/
-
-https://dou.ua/forums/topic/42501/?from=fpcol
 
 https://dou.ua/forums/blogs/?from=fpcol_more
 
@@ -212,6 +210,8 @@ https://dou.ua/lenta/news/?from=fpnews_more
 
 https://gamedev.dou.ua/?from=fpgamedev
 
+https://gamedev.dou.ua/news/room-8-new-highlight-qa-studio/?from=fpgamedev
+
 https://gamedev.dou.ua/news/cdpr-pochne-zanovo-pratsyuvati-nad-multipleyernoyu-groyu-za-vidmakom/?from=fpgamedev
 
 https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=fpgamedev
@@ -221,8 +221,6 @@ https://gamedev.dou.ua/news/digital-dragons-free-tickets-for-ukrainians/?from=fp
 https://gamedev.dou.ua/news/steam-games-with-ukrainian-localization-stats/?from=fpgamedev
 
 https://gamedev.dou.ua/blogs/from-wood-carving-to-gamedev/?from=fpgamedev
-
-https://gamedev.dou.ua/news/ostiv-game-alpha-5-trailer/?from=fpgamedev
 
 https://gamedev.dou.ua/?from=fpgamedev
 
@@ -244,13 +242,13 @@ https://dou.ua/forums/blogs/
 
 https://dou.ua/forums/topic/42543/?from=fptopics
 
-https://dou.ua/forums/blogs/
-
-https://dou.ua/forums/topic/42528/?from=fptopics
-
 https://dou.ua/forums/misc/
 
 https://dou.ua/forums/topic/42504/?from=fptopics
+
+https://dou.ua/forums/blogs/
+
+https://dou.ua/forums/topic/42528/?from=fptopics
 
 https://dou.ua/forums/development/
 
@@ -264,107 +262,107 @@ https://dou.ua/forums/blogs/
 
 https://dou.ua/forums/topic/42040/?from=fptopics
 
-https://dou.ua/lenta/articles/yuriy-osadchuk-obituary/?from=fpcomments#2593347
+https://dou.ua/forums/topic/42543/?from=fpcomments#2593596
 
-https://dou.ua/users/olga-kendzior/
+https://dou.ua/users/bogdan-kolesnichenko/
 
-https://dou.ua/lenta/articles/yuriy-osadchuk-obituary/?from=fpcomments
+https://dou.ua/forums/topic/42543/?from=fpcomments
 
-https://dou.ua/forums/topic/42135/?from=fpcomments#2593309
+https://dou.ua/forums/topic/42135/?from=fpcomments#2593581
+
+https://dou.ua/users/vasya-kuzmik/
+
+https://dou.ua/forums/topic/42135/?from=fpcomments
+
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=fpcomments#2593565
+
+https://dou.ua/users/ilya-nagula/
+
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=fpcomments
+
+https://dou.ua/forums/topic/42135/?from=fpcomments#2593563
 
 https://dou.ua/users/serge-petroff/
 
 https://dou.ua/forums/topic/42135/?from=fpcomments
 
-https://dou.ua/forums/topic/41399/?from=fpcomments#2593291
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=fpcomments#2593553
 
-https://dou.ua/users/sergeyborisenko/
+https://dou.ua/users/andriy-moroz-5/
 
-https://dou.ua/forums/topic/41399/?from=fpcomments
-
-https://dou.ua/forums/topic/42543/?from=fpcomments#2593280
-
-https://dou.ua/users/roman-karagodin/
-
-https://dou.ua/forums/topic/42543/?from=fpcomments
-
-https://dou.ua/lenta/articles/relocation-wave-2022/?from=fpcomments#2593241
-
-https://dou.ua/users/dmitry-kolesnikov/
-
-https://dou.ua/lenta/articles/relocation-wave-2022/?from=fpcomments
-
-https://pmi.team/
-
-https://svitla.com/career?from=doufp
-
-https://www.itcraft.com.ua/?from=doufp
+https://gamedev.dou.ua/articles/glory-to-the-heroes-game-developer-interview/?from=fpcomments
 
 https://jobs.dou.ua/companies/evoplay/vacancies/?from=doufp
 
-https://www.gen.tech/career?from=doufp
+https://www.luxoft.com/?from=doufp
 
 https://www.softserveinc.com/en-us/careers?from=doufp
 
-https://newxel.com/jobs/?from=doufp
-
-https://company.plarium.com/ua/career/?from=doufp
-
-https://jobs.dou.ua/companies/gr8-tech/?from=doufp
-
-http://jobs.ciklum.com/?from=doufp
-
-https://jobs.dou.ua/companies/belkins/vacancies/?from=doufp
+https://macpaw.com/?from=doufp
 
 http://www.materialise.kiev.ua/?from=doufp
 
-https://restream.io/careers
+https://www.moonactive.com/?from=doufp
 
-https://www.luxoft.com/?from=doufp
+https://svitla.com/career?from=doufp
 
-https://www.delasport.com/
+https://career.sigma.software/?from=doufp
+
+https://jobs.dou.ua/companies/gr8-tech/?from=doufp
+
+https://jobs.dou.ua/companies/playtech/vacancies/?from=doufp
+
+https://readdle.com/?from=doufp
+
+https://www.gen.tech/career?from=doufp
+
+https://newxel.com/jobs/?from=doufp
+
+http://jobs.ciklum.com/?from=doufp
+
+http://precoro.com
+
+https://pmi.team/
+
+https://www.itcraft.com.ua/?from=doufp
+
+https://squad.ua/
+
+https://company.plarium.com/ua/career/?from=doufp
+
+https://jobs.dou.ua/companies/belkins/vacancies/?from=doufp
+
+https://unitedtech.ai
 
 https://privatbank.ua/work/?from=doufp
 
 https://jobs.dou.ua/companies/allstars-it/vacancies/?from=doufp
 
-https://career.sigma.software/?from=doufp
-
-https://www.globallogic.com/ua/careers/?utm_source=dou-organic&amp;utm_medium=referal&amp;utm_campaign=DOUlogo
-
-https://www.moonactive.com/?from=doufp
-
-https://simcorp.com/?from=doufp
-
-https://readdle.com/?from=doufp
-
-https://macpaw.com/?from=doufp
-
-https://jobs.dou.ua/companies/playtech/vacancies/?from=doufp
-
-http://precoro.com
+https://www.delasport.com/
 
 https://jobs.dou.ua/companies/pdffiller/vacancies/?from=doufp
 
-https://unitedtech.ai
+https://restream.io/careers
 
-https://squad.ua/
+https://simcorp.com/?from=doufp
 
-https://jobs.dou.ua/companies/artkai/vacancies/229782/?from=widget_hot
+https://www.globallogic.com/ua/careers/?utm_source=dou-organic&amp;utm_medium=referal&amp;utm_campaign=DOUlogo
 
-https://jobs.dou.ua/companies/rebbix/vacancies/230326/?from=widget_hot
+https://jobs.dou.ua/companies/qatestlab/vacancies/230132/?from=widget_hot
 
-https://jobs.dou.ua/companies/geniusee/vacancies/230180/?from=widget_hot
+https://jobs.dou.ua/companies/melexis/vacancies/186728/?from=widget_hot
 
-https://jobs.dou.ua/companies/recruitment-agency-productivity/vacancies/229794/?from=widget_hot
+https://jobs.dou.ua/companies/playtini/vacancies/228620/?from=widget_hot
 
-https://jobs.dou.ua/companies/whimsy-games/vacancies/230520/?from=widget_hot
+https://jobs.dou.ua/companies/saldo-apps/vacancies/229081/?from=widget_hot
 
-https://jobs.dou.ua/companies/spd-ukraine/vacancies/230164/?from=widget_hot
+https://jobs.dou.ua/companies/proffiz/vacancies/231071/?from=widget_hot
 
-https://jobs.dou.ua/companies/cyber-balls-ukraine/vacancies/231611/?from=widget_hot
+https://jobs.dou.ua/companies/tonti-laguna/vacancies/230979/?from=widget_hot
 
-https://jobs.dou.ua/companies/mlsdev/vacancies/231202/?from=widget_hot
+https://jobs.dou.ua/companies/dbb-software/vacancies/230319/?from=widget_hot
+
+https://jobs.dou.ua/companies/ten-gg/vacancies/231274/?from=widget_hot
 
 https://jobs.dou.ua/?from=widget_hot
 
@@ -372,7 +370,7 @@ https://dou.ua/calendar/46581/?from=premiumevents_7268
 
 https://dou.ua/calendar/46499/?from=premiumevents_7269
 
-https://dou.ua/calendar/46460/?from=premiumevents_7258
+https://dou.ua/calendar/46460/?from=premiumevents_7259
 
 https://dou.ua/calendar/46532/?from=premiumevents_7264
 
@@ -382,25 +380,25 @@ https://dou.ua/calendar/46560/?from=premiumevents_7266
 
 https://dou.ua/calendar/46589/?from=premiumevents_7270
 
-https://dou.ua/forums/topic/40111/?from=footer
+https://dou.ua/forums/topic/40265/?from=footer
 
-https://dou.ua/lenta/articles/money-during-the-war/?from=footer
+https://dou.ua/forums/topic/37968/?from=footer
 
-https://dou.ua/forums/topic/41718/?from=footer
+https://dou.ua/forums/topic/40305/?from=footer
 
-https://dou.ua/lenta/articles/esoteric-programming-language/?from=footer
+https://dou.ua/lenta/articles/chmut-about-savelife/?from=footer
 
-https://dou.ua/forums/topic/40798/?from=footer
+https://dou.ua/forums/topic/41775/?from=footer
 
-https://dou.ua/lenta/interviews/hr-specialist-in-armed-forces/?from=footer
+https://dou.ua/forums/topic/37768/?from=footer
 
-https://dou.ua/lenta/interviews/cyberwar-and-hacking/?from=footer
+https://dou.ua/lenta/articles/language-rating-2023/?from=footer
 
-https://dou.ua/lenta/articles/tax-from-big-tech-companies/?from=footer
+https://dou.ua/lenta/interviews/ukrainian-postwar-it-market/?from=footer
 
-https://dou.ua/lenta/articles/work-only-for-big-money/?from=footer
+https://dou.ua/forums/topic/40713/?from=footer
 
-https://dou.ua/forums/topic/38389/?from=footer
+https://dou.ua/lenta/articles/internet-providers-about-power-outage/?from=footer
 
 https://dou.ua/
 
@@ -430,7 +428,7 @@ https://dou.ua/adv/
 
 https://dou.ua/legal/
 
-/cdn-cgi/l/email-protection#572422272738252317333822792236
+/cdn-cgi/l/email-protection#65161015150a171125010a104b1004
 
 javascript:;
 

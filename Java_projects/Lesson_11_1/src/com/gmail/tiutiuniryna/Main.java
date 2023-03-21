@@ -1,5 +1,6 @@
 package com.gmail.tiutiuniryna;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
@@ -19,7 +20,16 @@ public class Main {
 		List<String> links = new ArrayList<String>();
 		links = NetworkService.findLinks(html);
 
-		NetworkService.saveToFile(links);
+		File file = new File("Links.txt");
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		NetworkService.saveToFile(links, file);
+
+		NetworkService.siteAvailabilityCheck(file);
+
 	}
 
 }
